@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 7fd123f50a4314349b7f06e4b7dc5662
+timeCreated: 1481407998
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: air_bubble_left
+    100002: air_bubble_right
+    100004: eyelets_left
+    100006: eyelets_right
+    100008: fabric_front_upper
+    100010: fabric_heal_guard
+    100012: fabric_heal_upper
+    100014: fabric_insole
+    100016: fabric_liner
+    100018: fabric_main_left
+    100020: fabric_main_right
+    100022: fabric_toe_guard
+    100024: fabric_trim
+    100026: fabric_trim_front_left
+    100028: fabric_trim_front_right
+    100030: fabric_upper_mid
+    100032: fabric_upper_mid2_right
+    100034: laces
+    100036: //RootNode
+    100038: sole
+    100040: sole1
+    100042: sole1_MeshPart0
+    100044: sole1_MeshPart1
+    100046: sole_foam
+    100048: stitching
+    100050: swoosh_left
+    100052: swoosh_right
+    100054: tongue_front
+    100056: tongue_label
+    100058: tongue_top
+    100060: transform1
+    100062: transform10
+    100064: transform11
+    100066: transform12
+    100068: transform13
+    100070: transform14
+    100072: transform15
+    100074: transform16
+    100076: transform17
+    100078: transform18
+    100080: transform19
+    100082: transform2
+    100084: transform20
+    100086: transform21
+    100088: transform22
+    100090: transform23
+    100092: transform24
+    100094: transform25
+    100096: transform26
+    100098: transform3
+    100100: transform4
+    100102: transform5
+    100104: transform6
+    100106: transform7
+    100108: transform8
+    100110: transform9
+    400000: air_bubble_left
+    400002: air_bubble_right
+    400004: eyelets_left
+    400006: eyelets_right
+    400008: fabric_front_upper
+    400010: fabric_heal_guard
+    400012: fabric_heal_upper
+    400014: fabric_insole
+    400016: fabric_liner
+    400018: fabric_main_left
+    400020: fabric_main_right
+    400022: fabric_toe_guard
+    400024: fabric_trim
+    400026: fabric_trim_front_left
+    400028: fabric_trim_front_right
+    400030: fabric_upper_mid
+    400032: fabric_upper_mid2_right
+    400034: laces
+    400036: //RootNode
+    400038: sole
+    400040: sole1
+    400042: sole1_MeshPart0
+    400044: sole1_MeshPart1
+    400046: sole_foam
+    400048: stitching
+    400050: swoosh_left
+    400052: swoosh_right
+    400054: tongue_front
+    400056: tongue_label
+    400058: tongue_top
+    400060: transform1
+    400062: transform10
+    400064: transform11
+    400066: transform12
+    400068: transform13
+    400070: transform14
+    400072: transform15
+    400074: transform16
+    400076: transform17
+    400078: transform18
+    400080: transform19
+    400082: transform2
+    400084: transform20
+    400086: transform21
+    400088: transform22
+    400090: transform23
+    400092: transform24
+    400094: transform25
+    400096: transform26
+    400098: transform3
+    400100: transform4
+    400102: transform5
+    400104: transform6
+    400106: transform7
+    400108: transform8
+    400110: transform9
+    2300000: sole1_MeshPart0
+    2300002: sole1_MeshPart1
+    3300000: sole1_MeshPart0
+    3300002: sole1_MeshPart1
+    4300000: sole1_MeshPart0
+    4300002: sole1_MeshPart1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
