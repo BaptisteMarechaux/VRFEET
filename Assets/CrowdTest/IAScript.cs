@@ -23,7 +23,7 @@ public class IAScript : MonoBehaviour {
     private Vector3 rotateDir;
 
     public float jumpPowerGround = 60f;
-    public float jumpPowerOtherIA = 100;
+    public float jumpPowerOtherIA = 100f;
 
     [SerializeField]
     GameObject deadParticleEffect;
@@ -104,6 +104,28 @@ public class IAScript : MonoBehaviour {
         else
         {
             GetComponent<Rigidbody>().AddForce(new Vector3(0, jumpPowerGround, 0));
+        }
+        
+    }
+
+    public void OnCollisionStay(Collision collision)
+    {
+        if ((collision.gameObject.tag == "Feet") && collision.gameObject.GetComponent<Rigidbody>() != null)
+        {
+
+            float magnitude = Mathf.Log10(Vector3.SqrMagnitude(collision.gameObject.GetComponent<Rigidbody>().velocity) + 1f) + 1f;
+            if (magnitude > 0.0f && collision.gameObject.GetComponent<Rigidbody>().velocity.y < -0.2f)
+            {
+                if(transform.localScale.y> 0.02f)
+                {
+                    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y - 0.2f * Time.deltaTime, transform.localScale.z);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
+
+            }
         }
     }
 
