@@ -5,18 +5,24 @@ using UnityEngine;
 public class GoalScript : MonoBehaviour {
 
     [SerializeField]
-    GameObject ballObject;
-
-    [SerializeField]
     GameController game;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.Equals(ballObject))
+        BallScript ball = other.gameObject.GetComponent<BallScript>();
+
+        if (ball)
         {
-            BallScript ball = other.gameObject.GetComponent<BallScript>();
-            ball.ResetBall(0f);
-            game.AddGoal();
+            if (game.GetGameMode() == GameController.GameMode.TIME_ATTACK)
+            {
+                ball.ResetBall(false, 0f, true);
+            }
+            else
+            {
+                ball.ResetBall(true, 0f, true);
+            }
+
+            game.Goal();
         }
     }
 }

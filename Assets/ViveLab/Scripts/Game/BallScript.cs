@@ -11,9 +11,14 @@ public class BallScript : MonoBehaviour {
 
     float resetTimer = 0;
 
+    bool resetByGoal = false;
+
     bool resetEnable = false;
 
-	void Start () {
+    bool resetPostion = true;
+
+	void Start ()
+    {
         startPosition = transform.position;
 	}
 	
@@ -21,19 +26,30 @@ public class BallScript : MonoBehaviour {
     {
         if (resetEnable && resetTimer < Time.time)
         {
-            physic.MovePosition(startPosition);
+            if (resetPostion)
+            {
+                physic.MovePosition(startPosition);
 
-            physic.velocity = Vector3.zero;
-            physic.angularVelocity = Vector3.zero;
+                physic.velocity = Vector3.zero;
+                physic.angularVelocity = Vector3.zero;
 
-            resetEnable = false;
+                resetEnable = false;
+            }
+
+            if (!resetByGoal)
+            {
+                GameController.Instance.Miss();
+            }
         }
+
     }
 
-    public void ResetBall(float timer)
+    public void ResetBall(bool reset, float timer, bool goal = false)
     {
         resetTimer = Time.time + timer;
         resetEnable = true;
+        resetPostion = reset;
+        resetByGoal = goal;
     }
 
 }
