@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
-    public enum GameMode { TRAINING, TIME_ATTACK, VERSUS }
+    public enum GameMode { TRAINING, TIME_ATTACK, VERSUS, VERSUS_GOAL }
 
     [SerializeField]
     GameMode gameMode;
@@ -15,6 +15,9 @@ public class GameController : MonoBehaviour {
 
     [SerializeField]
     VersusController versusModeController;
+
+    [SerializeField]
+    VersusAsyncController versusAsyncController;
 
     [SerializeField]
     Transform ballSpawn;
@@ -75,6 +78,11 @@ public class GameController : MonoBehaviour {
             Instantiate(ballPrefab, BallSpawnPosition(), Quaternion.identity);
             versusModeController.enabled = true;
         }
+        else if (currentGameMode == GameMode.VERSUS_GOAL)
+        {
+            Instantiate(ballPrefab, BallSpawnPosition(), Quaternion.identity);
+            versusAsyncController.enabled = true;
+        }
         else if (currentGameMode == GameMode.TIME_ATTACK)
         {
             timeAttackModeController.enabled = true;
@@ -118,6 +126,10 @@ public class GameController : MonoBehaviour {
         {
             versusModeController.Goal();
         }
+        if (currentGameMode == GameMode.VERSUS_GOAL)
+        {
+            versusAsyncController.Goal();
+        }
 
         goal++;
         RefreshUI();
@@ -128,7 +140,10 @@ public class GameController : MonoBehaviour {
         if (currentGameMode == GameMode.VERSUS)
         {
             versusModeController.Miss();
-            Debug.Log("1");
+        }
+        else if (currentGameMode == GameMode.VERSUS_GOAL)
+        {
+            versusAsyncController.Miss();
         }
     }
 
@@ -142,6 +157,10 @@ public class GameController : MonoBehaviour {
         if (currentGameMode == GameMode.VERSUS)
         {
             versusModeController.Reset();
+        }
+        else if (currentGameMode == GameMode.VERSUS_GOAL)
+        {
+            versusAsyncController.Reset();
         }
         else if (currentGameMode == GameMode.TIME_ATTACK)
         {
