@@ -114,7 +114,7 @@ public class IAScript : MonoBehaviour {
         {
 
             float magnitude = Mathf.Log10(Vector3.SqrMagnitude(collision.gameObject.GetComponent<Rigidbody>().velocity) + 1f) + 1f;
-            if (magnitude > 0.0f && collision.gameObject.GetComponent<Rigidbody>().velocity.y < -0.2f)
+            if (magnitude > 0.0f && collision.gameObject.GetComponent<Rigidbody>().velocity.y < -0.1f)
             {
                 if(transform.localScale.y> 0.02f)
                 {

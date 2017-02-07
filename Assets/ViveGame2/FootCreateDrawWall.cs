@@ -20,7 +20,7 @@ public class FootCreateDrawWall : MonoBehaviour {
     {
         float magnitude = Mathf.Log10(Vector3.SqrMagnitude(sourceRigidbody.velocity) + 1f) + 1f;
 
-        if (canCheckCollision && magnitude > 1.0f && other.gameObject.tag == "Ground" && sourceRigidbody.velocity.y<-0.5f)
+        if (canCheckCollision && magnitude > 1.0f && other.gameObject.tag == "Ground" && sourceRigidbody.velocity.y<-0.4f)
         {
             Debug.Log(sourceRigidbody.velocity.y);
             GameObject.Instantiate(wall, positionToSpawn.position, positionToSpawn.rotation* positionToSpawn.localRotation);
