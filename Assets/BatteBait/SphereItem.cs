@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SphereItem : MonoBehaviour {
+    public int pointAmount;
+
     [SerializeField]
     Renderer myRend;
 	// Use this for initialization
@@ -18,6 +20,7 @@ public class SphereItem : MonoBehaviour {
     void OnTriggerEnter(Collider Col)
     {
         StartCoroutine(Explode(1.0f));
+        BattleBaitManager.instance.points+=pointAmount;
     }
 
     IEnumerator Explode(float duration)
