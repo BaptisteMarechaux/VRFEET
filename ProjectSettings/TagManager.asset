@@ -8,6 +8,7 @@ TagManager:
   - IA
   - Ground
   - Feet
+  - Hand
   layers:
   - Default
   - TransparentFX

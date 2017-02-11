@@ -121,7 +121,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4215860692895366}
   - component: {fileID: 33391721418456898}
-  - component: {fileID: 135231891774937894}
   - component: {fileID: 23577103693037662}
   m_Layer: 8
   m_Name: Sphere
@@ -150,8 +149,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975196929082954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.387, y: 0.001, z: -0.632}
-  m_LocalScale: {x: 0.5638806, y: 0.56388056, z: 0.56388056}
+  m_LocalPosition: {x: -0.517, y: 0.001, z: -0.582}
+  m_LocalScale: {x: 0.6233326, y: 0.45683643, z: 0.5347149}
   m_Children: []
   m_Father: {fileID: 4885053505946658}
   m_RootOrder: 4
@@ -176,8 +175,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1917040536178914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.945, y: 0.05, z: -4.925}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.05}
+  m_LocalPosition: {x: -0.8912281, y: 0.075, z: 1.226231}
+  m_LocalScale: {x: 0.12, y: 0.15, z: 0.05}
   m_Children:
   - {fileID: 4885053505946658}
   m_Father: {fileID: 0}
@@ -456,23 +455,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.2
-  attackRange: 0
-  attackPoints: 0
+  attackRange: 0.1
+  attackPoints: 1
   killThreshold: 0
   rotateSpeed: 20
-  jumpPowerGround: 45
-  jumpPowerOtherIA: 50
+  jumpPowerGround: 0
+  jumpPowerOtherIA: 0
   deadParticleEffect: {fileID: 1946585392796386, guid: 6a6cabbdbdab3aa4b8e279e8500409a6,
     type: 2}
---- !u!135 &135231891774937894
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1975196929082954}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  canMove: 1
+  rb: {fileID: 0}
