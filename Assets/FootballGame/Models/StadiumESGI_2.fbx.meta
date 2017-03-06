@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 206a1dd8ae45675478c6ee7a017a9ce4
+timeCreated: 1486333290
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Ad1
+    100002: Ad2
+    100004: Ad3
+    100006: Ad4
+    100008: Ads
+    100010: Columns2
+    100012: Exterior
+    100014: Goal2
+    100016: Goal3
+    100018: Line1
+    100020: Roof_e
+    100022: Roof_e 1
+    100024: Roof_s
+    100026: Roof_s 1
+    100028: soccer_terran
+    100030: //RootNode
+    100032: Terrain
+    100034: Tribune1
+    100036: Tribune1_Columns
+    100038: Tribune1_RoofBar
+    100040: Tribune1_Tribunes_1
+    100042: Tribune1_Walls
+    100044: Tribune2
+    100046: Tribune2_RoofBar
+    100048: Tribune2_Tribunes_1
+    100050: Tribune2_Walls
+    400000: Ad1
+    400002: Ad2
+    400004: Ad3
+    400006: Ad4
+    400008: Ads
+    400010: Columns2
+    400012: Exterior
+    400014: Goal2
+    400016: Goal3
+    400018: Line1
+    400020: Roof_e
+    400022: Roof_e 1
+    400024: Roof_s
+    400026: Roof_s 1
+    400028: soccer_terran
+    400030: //RootNode
+    400032: Terrain
+    400034: Tribune1
+    400036: Tribune1_Columns
+    400038: Tribune1_RoofBar
+    400040: Tribune1_Tribunes_1
+    400042: Tribune1_Walls
+    400044: Tribune2
+    400046: Tribune2_RoofBar
+    400048: Tribune2_Tribunes_1
+    400050: Tribune2_Walls
+    2300000: Ad1
+    2300002: Ad2
+    2300004: Ad3
+    2300006: Ad4
+    2300008: Columns2
+    2300010: Exterior
+    2300012: Goal2
+    2300014: Goal3
+    2300016: Line1
+    2300018: Roof_e
+    2300020: Roof_e 1
+    2300022: Roof_s
+    2300024: Roof_s 1
+    2300026: soccer_terran
+    2300028: Tribune1_Columns
+    2300030: Tribune1_RoofBar
+    2300032: Tribune1_Tribunes_1
+    2300034: Tribune1_Walls
+    2300036: Tribune2_RoofBar
+    2300038: Tribune2_Tribunes_1
+    2300040: Tribune2_Walls
+    3300000: Ad1
+    3300002: Ad2
+    3300004: Ad3
+    3300006: Ad4
+    3300008: Columns2
+    3300010: Exterior
+    3300012: Goal2
+    3300014: Goal3
+    3300016: Line1
+    3300018: Roof_e
+    3300020: Roof_e 1
+    3300022: Roof_s
+    3300024: Roof_s 1
+    3300026: soccer_terran
+    3300028: Tribune1_Columns
+    3300030: Tribune1_RoofBar
+    3300032: Tribune1_Tribunes_1
+    3300034: Tribune1_Walls
+    3300036: Tribune2_RoofBar
+    3300038: Tribune2_Tribunes_1
+    3300040: Tribune2_Walls
+    4300000: Roof_e
+    4300002: Roof_s
+    4300004: Tribune2_Tribunes_1
+    4300006: Tribune2_RoofBar
+    4300008: Tribune2_Walls
+    4300010: Columns2
+    4300012: Roof_e
+    4300014: Roof_s
+    4300016: Tribune1_Columns
+    4300018: Tribune1_Walls
+    4300020: Tribune1_Tribunes_1
+    4300022: Tribune1_RoofBar
+    4300024: soccer_terran
+    4300026: Ad1
+    4300028: Ad2
+    4300030: Ad3
+    4300032: Ad4
+    4300034: Exterior
+    4300036: Goal2
+    4300038: Goal3
+    4300040: Line1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
