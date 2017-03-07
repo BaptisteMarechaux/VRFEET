@@ -8,6 +8,7 @@ public class WandController : MonoBehaviour
     SteamVR_Controller.Device device;
 
     private GameObject pickup;
+    private bool onLeg = false;
 
     // Use this for initialization
     void Awake()
@@ -26,6 +27,14 @@ public class WandController : MonoBehaviour
         device = SteamVR_Controller.Input((int)trackedObj.index);
     }
 
+    private void OnTriggerEnter(Collider collider)
+    {
+        if(collider.tag == "Leg")
+        {
+           // onLeg = true;
+        }
+    }
+
     private void OnTriggerStay(Collider collider)
     {
         pickup = collider.gameObject;
@@ -36,10 +45,18 @@ public class WandController : MonoBehaviour
         }
         if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger) && pickup != null)
         {
-            pickup.transform.parent = null;
-            pickup.GetComponent<Rigidbody>().isKinematic = false;
+            if (!onLeg)
+            {
+                pickup.transform.parent = null;
+                pickup.GetComponent<Rigidbody>().isKinematic = false;
 
-            tossObject(collider.attachedRigidbody);
+                tossObject(collider.attachedRigidbody);
+            }
+            else
+            {
+                pickup.transform.parent = collider.gameObject.transform;
+            }
+
         }
     }
 
@@ -56,7 +73,15 @@ public class WandController : MonoBehaviour
 
     private void OnTriggerExit(Collider collider)
     {
-        pickup.transform.parent = null;
-        pickup.GetComponent<Rigidbody>().isKinematic = false;
+        if (collider.tag == "Leg")
+        {
+            onLeg = false;
+        }
+        else
+        {
+            pickup.transform.parent = null;
+            pickup.GetComponent<Rigidbody>().isKinematic = false;
+        }
+
     }
 }

@@ -8,11 +8,10 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: CastleCoreMaterial
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
+  m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -82,13 +81,13 @@ Material:
       second: 1
     - first:
         name: _DstBlend
-      second: 10
+      second: 0
     - first:
         name: _GlossMapScale
       second: 1
     - first:
         name: _Glossiness
-      second: 0.474
+      second: 0.5
     - first:
         name: _GlossyReflections
       second: 1
@@ -97,7 +96,7 @@ Material:
       second: 1
     - first:
         name: _Mode
-      second: 2
+      second: 0
     - first:
         name: _OcclusionStrength
       second: 1
@@ -112,17 +111,17 @@ Material:
       second: 1
     - first:
         name: _SrcBlend
-      second: 5
+      second: 1
     - first:
         name: _UVSec
       second: 0
     - first:
         name: _ZWrite
-      second: 0
+      second: 1
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.8235294, g: 0.9926977, b: 1, a: 0.797}
+      second: {r: 0, g: 0.4511154, b: 0.4705882, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0, g: 1.3632416, b: 3.594, a: 1}
+      second: {r: 0, g: 0.26836547, b: 0.357, a: 1}

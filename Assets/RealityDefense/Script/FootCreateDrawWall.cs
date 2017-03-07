@@ -29,7 +29,7 @@ public class FootCreateDrawWall : MonoBehaviour {
     {
         float magnitude = Mathf.Log10(Vector3.SqrMagnitude(sourceRigidbody.velocity) + 1f) + 1f;
 
-        if (canCheckCollision && magnitude > 1.0f && other.gameObject.tag == "Ground" && sourceRigidbody.velocity.y<-1f)
+        if (canCheckCollision && magnitude > 0.5f && other.gameObject.tag == "Ground" && sourceRigidbody.velocity.y<-0.5f)
         {
             Debug.Log(sourceRigidbody.velocity.y);
             GameObject.Instantiate(wave, transform.position, positionToSpawn.rotation* positionToSpawn.localRotation);
@@ -79,7 +79,7 @@ public class FootCreateDrawWall : MonoBehaviour {
                 oldPosition = this.transform.position;
                 if (sourceRigidbody.velocity.y > -0.4f /*&& sourceRigidbody.velocity.y < 0.1f*/)
                 {
-                    GameObject.Instantiate(wall, positionToSpawn.position, positionToSpawn.rotation * positionToSpawn.localRotation);
+                    //GameObject.Instantiate(wall, positionToSpawn.position, positionToSpawn.rotation * positionToSpawn.localRotation);
                     oldPosition = this.transform.position;
                 }
             }

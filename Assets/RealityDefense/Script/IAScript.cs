@@ -121,7 +121,7 @@ public class IAScript : MonoBehaviour {
         if ((collision.gameObject.tag == "Feet") && collision.gameObject.GetComponent<Rigidbody>() != null)
         {
 
-            float magnitude = Mathf.Log10(Vector3.SqrMagnitude(collision.gameObject.GetComponent<Rigidbody>().velocity) + 1f) + 1f;
+            /*float magnitude = Mathf.Log10(Vector3.SqrMagnitude(collision.gameObject.GetComponent<Rigidbody>().velocity) + 1f) + 1f;
             if (magnitude > 0.0f && collision.gameObject.GetComponent<Rigidbody>().velocity.y < -0.15f)
             {
                 if(transform.localScale.y> 0.02f)
@@ -133,6 +133,13 @@ public class IAScript : MonoBehaviour {
                     Destroy(gameObject);
                 }
 
+            }*/
+            float magnitude = Mathf.Log10(Vector3.SqrMagnitude(collision.gameObject.GetComponent<Rigidbody>().velocity) + 1f) + 1f;
+            if (magnitude > 0.3f && collision.gameObject.GetComponent<Rigidbody>().velocity.y < -0.7f)
+            {
+                canMove = false;
+                    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y*0.1f, transform.localScale.z);
+                    Destroy(gameObject, 0.5f);
             }
         }
 
