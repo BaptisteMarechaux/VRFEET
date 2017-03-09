@@ -33,6 +33,10 @@ public class IAScript : MonoBehaviour {
 
     public Rigidbody rb;
 
+    [SerializeField]
+    AudioSource audioFeedback;
+    bool alreadyPlaySound = false;
+
     // Use this for initialization
     void Start()
     {
@@ -138,8 +142,13 @@ public class IAScript : MonoBehaviour {
             if (magnitude > 0.3f && collision.gameObject.GetComponent<Rigidbody>().velocity.y < -0.7f)
             {
                 canMove = false;
-                    transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y*0.1f, transform.localScale.z);
-                    Destroy(gameObject, 0.5f);
+                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y*0.1f, transform.localScale.z);
+                if (!alreadyPlaySound)
+                {
+                    audioFeedback.Play();
+                    alreadyPlaySound = true;
+                }
+                Destroy(gameObject, 0.5f);
             }
         }
 

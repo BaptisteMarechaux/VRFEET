@@ -22,6 +22,9 @@ public class FootCreateDrawWall : MonoBehaviour {
     [SerializeField]
     bool onCollision;
 
+    [SerializeField]
+    AudioSource audioFeedback;
+
     public
     Vector3 oldPosition = new Vector3(0,0,0);
 
@@ -40,6 +43,7 @@ public class FootCreateDrawWall : MonoBehaviour {
             onCollision = true;
             oldPosition = this.transform.position;
         }
+        audioFeedback.Play();
     }
 
     void OnCollisionStay(Collision other)

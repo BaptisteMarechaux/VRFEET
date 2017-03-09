@@ -10,6 +10,10 @@ public class WandController : MonoBehaviour
     private GameObject pickup;
     private bool onLeg = false;
 
+    [SerializeField]
+    AudioSource audioFeedback;
+    bool alreadyPlaySound = false;
+
     // Use this for initialization
     void Awake()
     {
@@ -33,6 +37,7 @@ public class WandController : MonoBehaviour
         {
            // onLeg = true;
         }
+            audioFeedback.Play();
     }
 
     private void OnTriggerStay(Collider collider)
