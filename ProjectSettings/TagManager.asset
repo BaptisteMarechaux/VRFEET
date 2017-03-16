@@ -9,6 +9,9 @@ TagManager:
   - Ground
   - Feet
   - Hand
+  - projectile
+  - FxTemporaire
+  - Leg
   layers:
   - Default
   - TransparentFX
