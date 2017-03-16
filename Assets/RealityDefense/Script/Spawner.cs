@@ -13,10 +13,11 @@ public class Spawner : MonoBehaviour {
     int i = 0;
 
     // Use this for initialization
-    void Start () {
+    void OnEnable () {
         half = nbIA / 4;
         x = -half;
         z = -half;
+        i = 0;
     }
 	
 	// Update is called once per frame
