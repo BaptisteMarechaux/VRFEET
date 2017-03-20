@@ -26,6 +26,9 @@ public class GoalKeeperController : MonoBehaviour {
 
     float jumpAxis;
 
+    [SerializeField]
+    SpriteRenderer spriteRender;
+
     void Start()
     {
         startPosition = transform.localPosition;
@@ -56,6 +59,14 @@ public class GoalKeeperController : MonoBehaviour {
         {
             physic.AddForce(new Vector3(0f, 100f * jumpAxis * jumpForce, 0f));
             isGrounded = false;
+        }
+        if (movingAxis > 0)
+        {
+            spriteRender.flipX = true;
+        }
+        if (movingAxis < 0)
+        {
+            spriteRender.flipX = false;
         }
     }
 

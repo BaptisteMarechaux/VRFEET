@@ -7,6 +7,9 @@ public class SphereItem : MonoBehaviour {
 
     [SerializeField]
     Renderer myRend;
+    [SerializeField]
+    AudioSource explosionSoundEffect;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -26,7 +29,7 @@ public class SphereItem : MonoBehaviour {
     IEnumerator Explode(float duration)
     {
         float elapsed=0;
-
+        explosionSoundEffect.Play();
         while (elapsed < duration)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * 2, elapsed / duration);

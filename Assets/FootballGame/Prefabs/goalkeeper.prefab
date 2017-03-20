@@ -83,8 +83,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   physic: {fileID: 54064320154147572}
   speed: 4
-  jumpForce: 2.5
+  jumpForce: 3
   movementRangeX: 4
+  spriteRender: {fileID: 212886756083578944}
 --- !u!212 &212886756083578944
 SpriteRenderer:
   m_ObjectHideFlags: 1
