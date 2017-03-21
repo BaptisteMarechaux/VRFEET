@@ -146,7 +146,7 @@ public class GameManager : MonoBehaviour {
         //float lerp = Mathf.PingPong(Time.time, 1.0f) / 1.0f;
         //lifeGameObjectColor.GetComponent<Renderer>().material.color = Color.Lerp(startColor, endcolor, 0.1f);
 
-        if (Manager.pv <= 20 && Manager.pv != 0)
+        if (Manager.pv <= 20 && Manager.pv >= 0)
         {
             rd.material.color = Color.Lerp(startColor, endcolor, (20.0f - Manager.pv) / 20.0f);
             rd.material.SetColor("_EmissionColor", Color.Lerp(startColor, endcolor, (20.0f - Manager.pv) / 20.0f));
