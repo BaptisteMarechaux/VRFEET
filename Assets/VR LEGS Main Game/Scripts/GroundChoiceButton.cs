@@ -39,7 +39,7 @@ public class GroundChoiceButton : MonoBehaviour {
         transform.position = new Vector3(transform.position.x, yActiveStep, transform.position.z);
         collider.size = new Vector3(collider.size.x, yActiveStepCollider, collider.size.z);
         this.renderer.material = activeMaterial;
-		if (stayTimer >= 1.5f) {
+		if (stayTimer >= 2.5f) {
 			SceneManager.LoadScene (destinationScene);
 		}
 		stayTimer += Time.deltaTime;
